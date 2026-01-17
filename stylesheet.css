@@ -1,5 +1,5 @@
 body {
-    background: rgb(22, 22, 22);
+    background: rgb(10, 10, 10);
     font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
     color: white;
     margin: 0;
@@ -7,24 +7,51 @@ body {
 }
 
 header {
-    background: black;
+    background: rgb(19, 19, 19);
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+header.home nav {
+    background: rgb(10, 10, 10);
+    margin: 0;
     padding: 20px;
 }
 
+.center-text {
+    text-align: center;
+    font-size: 40px;
+}
+
 section {
-    background: white;
-    color: gray;
-    padding: 20px;
+    padding: 100px;
     display: flex;
     flex-direction: row;
 }
 
-div {
-    background: rgb(48, 48, 48);
-    color: white;
+section.top {
+    background: rgb(226, 226, 226);
+}
+
+section.bottom {
+    background: rgb(19, 19, 19);
+}
+
+.images div {
     margin: auto;
+    border-radius: 10px;
     width: 150px;
     height: 150px;
+}
+
+section.images.top div {
+    background: rgb(19, 19, 19);
+    color: white;
+}
+
+section.images.bottom div {
+    background: rgb(226, 226, 226);
+    color: black;
 }
 
 ul {
@@ -39,6 +66,16 @@ li {
 }
 
 footer {
-    background: black;
-    padding: 10px 20px;
+    background: rgb(10, 10, 10);
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer div {
+    background: rgb(10, 10, 10);
+    color: rgb(241, 241, 241);
+    margin: 10px;
+    text-align: center;
+    font-size: 15px;
 }
